@@ -87,11 +87,7 @@ dentro del contenedor tengo el lateral izquierdo, el derecho y principal (medio)
             font-weight: bold;
         }
 
-      /*  div.listadoPrincipal {
-            color: black;
-            margin-left: 1px;
-        }*/
-
+     
         hr.bloquesInformacion {
             margin-top: 1px;
         }
@@ -113,9 +109,7 @@ dentro del contenedor tengo el lateral izquierdo, el derecho y principal (medio)
             /* tamaño de la fuente */
             width: 50%;
             height: 40px;
-           
             /* ancho del boton */
-
         }
 
         .enviarFormulario:hover {
@@ -124,13 +118,11 @@ dentro del contenedor tengo el lateral izquierdo, el derecho y principal (medio)
             cursor: pointer;
             /* cambia el cursor del mouse de flecha a "mano" al pasar el mouse */
             align-self: flex-start;
-            /* el boton queda al principio de la caja, sin esta propiedad queda desalineado */
+           /* el boton queda al principio de la caja, sin esta propiedad queda desalineado */
 
         }
 
-
         .textoForm {
-
             border: 1px solid #39c;
             height: 40px;
             width: 250px;

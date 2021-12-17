@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>FORMULARIO DE CONTACTO</title>
 </head>
-<body>
 
-    <form>
-        <div>
-           Apellido y Nombre <input type="text" placeholder="Apellido y Nombre">
-           Telefono de Contacto <input type="text" placeholder="Telefono">
-           <textarea name="comentarios" id="" cols="150" rows="10"></textarea>
-           <input type="submit" value = "Aveptar" class="botonAceptar">
-           <input type="submit" value ="Enviar Mail" class="enviarMail">
+<body>
+    <div class="contenedorContacto">
+        <div class="headerContacto">
+            <p class="contacto">CONTACTO</p>
         </div>
-    </form>
-    
+        <div class="contenidoContacto">
+            <div class="lateralContacto">
+                <ul>
+                    <li class="iconos" style="background-image:url(icons/telefono.svg)">Telefono: 2664372195</li>
+                    <li class="iconos" style="background-image:url(icons/mail.svg)">Correo electronico:arojopablo@gmail.com</li>
+                    <li class="iconos" style="background-image:url(icons/location.png)">Telefono: 2664372195</li>
+                    <li class="iconos" style="background-image:url(icons/location.png)">Domicilio: 2664372195</li>
+                </ul>
+                <ul class="redes">
+                    <li style="background-image: url(icons/google.png);"></li>
+                    <li style="background-image: url(/icons/facebook.png)"></li>
+                    <li style="background-image: url(/icons/instagram.png)"></li>
+                    <li style="background-image: url(/icons/t.png)"></li>
+                    <li style="background-image: url(/icons/youtube.png)"></li>
+
+                </ul>
+            </div>
+            <div class="derechaContacto">
+                <form>
+                    <p><input type="text" class="textContacto" placeholder="Apellido y Nombre"></p>
+                    <p><input type="text" class="textContacto" placeholder="Telefono"></p>
+                    <p><input type="text" class="textContacto" placeholder="Correo electronico"></p>
+                    <p><input type="text" class="textContacto" placeholder="Asunto"></p>
+                    <p><textarea name="comentarios" id="" cols="50" rows="10"></textarea></p>
+                    <p><input type="submit" value="Enviar" class="botonAceptar"></p>
+                    <p><input type="submit" value="Enviar Mail" class="enviarMail"></p>
+                    <form>
+            </div>
+        </div>
+        <div class="footerContacto">
+            <center>Formulario de contacto, nueva version con estilos y float</center>
+        </div>
+
+    </div>
 </body>
+
 </html>

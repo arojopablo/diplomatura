@@ -12,7 +12,7 @@ h2 {
 
 hr {
   
-    background-color:rgb(178, 192, 187); 
+    background-color:rgb(216, 245, 235); 
     height: 2px;
 }
 
@@ -38,7 +38,7 @@ ul {
 */
 
 .datosPersonales {
-    float:left;  /* para que la caja "datosPersonales quede al lado de la de foto */ 
+     float:left;  /* para que la caja "datosPersonales quede al lado de la de foto */ 
     width: 900px;
     font-size:18px;
     /*border: 2px solid red;*/  
@@ -106,16 +106,110 @@ ul.redesSociales li a:hover {background-color: #ddd;} /* Al pasar el mouse cambi
         color: #008CBA; /* color del texto */ 
         padding: 15px 32px; 
         /* text-align: center; */ 
-        text-decoration: none;
-        display: inline-block;
+       /* text-decoration: none;
+        display: inline-block;*/
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-        background-image: url("/4819950991637858758.svg");    /* coloco un icono en el boton, la misma propiedad permite poner un icono en las biñetas x ejemplo */
+        background-image: url("icons/17254674531637858756-128.png");    /* coloco un icono en el boton, la misma propiedad permite poner un icono en las biñetas x ejemplo */
                 background-repeat: no-repeat; /* para que el icono de fondo no se replique dentro del boton (aparezca una sola ves) */ 
-        background-size: 20px;
-        background-position: center; /* coloco el ICONO en el centro */  
+        background-size: 5px;
+        background-position: left; /* coloco el ICONO en el centro */  
         margin-top: 5px;
         vertical-align:text-top;
         
+}
+
+/* clases de formulario de contacto */ 
+
+.contenedorContacto {
+    width: 1200px;
+    height: 900px;
+    border: solid;
+    background-color: #f4faf6b9;
+}
+
+.headerContacto {
+    width: 100%;
+    height: 10%;
+    /*background-color: aquamarine;*/
+    border-bottom: solid;
+
+}
+
+.contenidoContacto {
+    width: 100%;
+    height: 80%;
+    /*background-color:chocolate;*/
+}
+
+.lateralContacto {
+/*margin-top: 30px; /* mucho margen arriba para que quede mas centrado la lista con datos de contacto ya que es poca informacion la que se muestra */ 
+float:left;
+width: 45%;
+height: 80%;
+/*background-color: yellow;*/
+}
+
+.derechaContacto {
+float: right;
+width: 45%;
+height: 80%;
+/*background-color: red;*/
+}
+
+.footerContacto {
+    width: 100%;    
+    height: 10%;
+    padding-top: 1px;
+    margin-top: 1px;
+ /*   background-color: rgb(129, 127, 255);*/
+}
+
+.textContacto {
+    border: 1px solid #39c;
+    height: 40px;
+    width: 250px;
+    background-color: #EEEE;
+    text-align: left;
+    padding-left: 40px;
+    font-weight: bold;
+    color: #3C3C3C;
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 15px;
+}
+
+.contacto {
+    font-size: 36px;
+    text-align: center;
+    color:#4CAF50;
+    
+}
+
+.iconos {
+    line-height: 1.5; /* INTERLINEADO ENTRE LISTAS */ 
+    padding-left: 2rem;
+   /* background-image: url(4819950991637858758.svg);*/
+    background-position: 0 0;
+    background-size: 1.2rem 1.2rem;
+    background-repeat: no-repeat;
+    list-style-type: none;
+}
+
+ul.redes {
+    margin-top: 50px;
+}
+
+ul.redes li {
+    margin-left: 30px;        
+    line-height: 1.5; /* INTERLINEADO ENTRE LISTAS */ 
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+   /* background-image: url(4819950991637858758.svg);*/
+  /*  background-position: 0 0;*/
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+    list-style-type: none;
+    display: inline;
 }
