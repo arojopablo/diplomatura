@@ -18,7 +18,7 @@ hr {
 
 .estudiosCursados {
     /*float:inline-start;*/
-    margin-top: 150px;
+    margin-top: 5px;
 }
 
 
@@ -51,7 +51,7 @@ div.datosPersonales ul {line-height: 2rem;} /* Aumento el interlineado (espacio 
     width: 200px;
     height: 1000px;
     float:right; 
-    border: 10px solid darkredgrey;
+    border: 10px solid darkgrey;
     margin-left: 5px; 
     margin-right: 5px;
     padding: 5px;
