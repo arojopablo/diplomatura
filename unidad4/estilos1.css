@@ -90,8 +90,8 @@ ul.redesSociales li a:hover {background-color: #ddd;} /* Al pasar el mouse cambi
 /* Estilos de formulario de Contacto */ 
  
 .botonAceptar {
-     /* background-color: #4CAF50; */
-     background-color: red;;
+      background-color: #4CAF50; 
+     
     border: none;
     color: white;
     padding: 15px 32px;
