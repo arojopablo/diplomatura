@@ -7,7 +7,8 @@ h1 {
 
 h2 {
     font-family: 'proxima-nova', sans-serif;
-    color:rgb(166, 219, 166)
+  /*  color:rgb(166, 219, 166) */
+    color: red;
 }
 
 hr {
@@ -51,7 +52,7 @@ div.datosPersonales ul {line-height: 2rem;} /* Aumento el interlineado (espacio 
     width: 200px;
     height: 1000px;
     float:right; 
-    border: 10px solid darkgrey;
+    border: 30px solid darkgrey;
     margin-left: 5px; 
     margin-right: 5px;
     padding: 5px;
