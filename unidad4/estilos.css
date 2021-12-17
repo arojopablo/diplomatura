@@ -49,7 +49,7 @@ ul {
 div.datosPersonales ul {line-height: 2rem;} /* Aumento el interlineado (espacio entre) de las listas */ 
 
 .fotoCv {
-    width: 200px;
+    width: 500px;
     height: 1000px;
     float:right; 
     border: 30px solid darkgrey;
@@ -84,13 +84,14 @@ ul.redesSociales li a:hover {background-color: #ddd;} /* Al pasar el mouse cambi
     font-family: serif;
     color: darkgrey;
     font-size: medium;
-    font-style: italic;
+   /* font-style: italic;*/
 }
 
 /* Estilos de formulario de Contacto */ 
  
 .botonAceptar {
-    background-color: #4CAF50; 
+     /* background-color: #4CAF50; */
+     background-color: red;;
     border: none;
     color: white;
     padding: 15px 32px;
