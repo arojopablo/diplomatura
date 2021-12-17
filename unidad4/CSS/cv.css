@@ -1,0 +1,179 @@
+        * {
+            font-family: 'proxima-nova', sans-serif;
+        }
+
+        li {
+            line-height: 1.5;
+
+        }
+
+        /*el contenedor tiene alto y ancho en pixels 
+dentro del contenedor tengo el lateral izquierdo, el derecho y principal (medio), estos flotan y tienen ancho y largo en porcentaje (no pixels)
+*/
+        .contenedor {
+            width: 1200px;
+            height: 1000px;          
+        
+        }
+
+        .lateral {
+            width: 25%;
+            /* Ancho de columna */
+            background-color: #0086ED;
+            /*Color de fondo para columna lateral */
+            float: left;
+            /* Columna a la izquierda */
+            height: 100%;
+
+        }
+
+        .principal {
+            width: 45%;
+            float:left; 
+            height: 100%;
+            margin-left: 1px;
+            background-color: #FFFFFF;
+            border: #000000 1px solid;
+
+        }
+
+        .lateralDerecho {
+            margin-left: 2px;
+            padding-left: 10px;
+            width: 26%;
+            background-color: #d1dbe2;
+            float: left;
+            height: 100%;
+        }
+
+
+        div.foto {
+            width: 200px;
+            background-color: white;
+           /* float: left; */
+            height: 350px;
+            margin-left: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 30px;
+        }
+
+        div.foto img {
+            margin-left: 2px;
+        }
+
+        p.izquierda {
+            color: white;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+
+        p.derecha {
+            color: black;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        p.nombre {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 4em;
+            font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+            color: #0086ED;
+            font-weight: bold;
+        }
+
+      /*  div.listadoPrincipal {
+            color: black;
+            margin-left: 1px;
+        }*/
+
+        hr.bloquesInformacion {
+            margin-top: 1px;
+        }
+
+        
+        .enviarFormulario {
+            background-color: #4CAF50;
+            /*Color de fondo del boton*/
+            border: none;
+            /*saco el borde*/
+            color: white;
+            /*Color del texto del boton*/
+            padding: 1px 1px;
+            text-align: center;
+            /*alineacion del texto del boton al centro*/
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            /* tamaño de la fuente */
+            width: 50%;
+            height: 40px;
+           
+            /* ancho del boton */
+
+        }
+
+        .enviarFormulario:hover {
+            color: black;
+            /* el texto del boton cambia a negro al pasar el mouse */
+            cursor: pointer;
+            /* cambia el cursor del mouse de flecha a "mano" al pasar el mouse */
+            align-self: flex-start;
+            /* el boton queda al principio de la caja, sin esta propiedad queda desalineado */
+
+        }
+
+
+        .textoForm {
+
+            border: 1px solid #39c;
+            height: 40px;
+            width: 250px;
+            background-color: #EEEE;
+            text-align: left;
+            padding-left: 40px;
+            font-weight: bold;
+            color: #3C3C3C;
+            background-repeat: no-repeat;
+            background-position: 4px center;
+            background-size: 15px;
+        }
+
+        .areaForm {
+            border: 1px solid #39c;
+            background-color: #EEEE;
+            text-align: left;
+            padding-left: 25px;
+            padding-top: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+            color: #3C3C3C;
+            background-image: url("icons/comentarios.svg");
+            background-repeat: no-repeat;
+            background-size: 20px;
+               
+
+        }
+
+        footer {
+            /* "La propiedad CSS clear especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos."*/
+            background-color: white;
+            border-top: 1px solid black;
+            width: 1150px;
+            height: 5%;
+            margin-top: 1px;
+            padding-top: 1px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            font-style: italic;
+            font-size: small;
+            text-align: center;
+        }
+
+        }
+    

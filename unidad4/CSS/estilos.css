@@ -1,0 +1,121 @@
+h1 {
+    text-transform: uppercase;
+    font-family: 'proxima-nova', sans-serif;
+    color:rgb(166, 219, 166);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'proxima-nova', sans-serif;
+    color:rgb(166, 219, 166)
+}
+
+hr {
+  
+    background-color:rgb(178, 192, 187); 
+    height: 2px;
+}
+
+.estudiosCursados {
+    /*float:inline-start;*/
+    margin-top: 150px;
+}
+
+
+/*
+ul {
+    padding-left: 2rem;
+    list-style-type: none;
+  }
+  
+  ul li {
+    padding-left: 2rem;
+    background-image: url(4819950991637858758.svg);
+    background-position: 0 0;
+    background-size: 1.2rem 1.2rem;
+    background-repeat: no-repeat;
+  }
+*/
+
+.datosPersonales {
+    float:left;  /* para que la caja "datosPersonales quede al lado de la de foto */ 
+    width: 900px;
+    font-size:18px;
+    /*border: 2px solid red;*/  
+}
+
+div.datosPersonales ul {line-height: 2rem;} /* Aumento el interlineado (espacio entre) de las listas */ 
+
+.fotoCv {
+    width: 200px;
+    float:inline-start; 
+    border: 2px solid darkgrey;
+    margin-left: 1000px; 
+    margin-right: 500px;
+    padding: 5px;
+}
+
+p {}
+
+ul.redesSociales {list-style-type: none;}
+ul.redesSociales li {display: inline;}
+/* transition background-color : "velocidad de cambio del color al pasar mouse, 
+si pongo x ejemplo 200s es una transicion lenta 
+(si paso el mouse de instagram a facebook de manera repetitiva el cambio de color se relentiza */ 
+ul.redesSociales li a {
+    margin-top: 10px;
+    color: black;
+    float: left;
+    padding: 2px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+ul.redesSociales li a.face {color: #3b5998; }/* Codigo color azul de facebook */
+ul.redesSociales li a.insta {color: #bc2a8d; } /*codigo de colo rojo de instagram */ 
+ul.redesSociales li a:hover {background-color: #ddd;} /* Al pasar el mouse cambia de color*/
+
+.piePagina  {
+    font-family: serif;
+    color: darkgrey;
+    font-size: medium;
+    font-style: italic;
+}
+
+/* Estilos de formulario de Contacto */ 
+ 
+.botonAceptar {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* Boton con fondo blanco e icono para enviar mail */ 
+
+.enviarMail {
+        background-color: white;  /*fondo blanco hace "desaparecer" el boton sino tiene borde */ 
+        border: 1px solid #008CBA; /* borde color azul*/ 
+        color: #008CBA; /* color del texto */ 
+        padding: 15px 32px; 
+        /* text-align: center; */ 
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-image: url("/4819950991637858758.svg");    /* coloco un icono en el boton, la misma propiedad permite poner un icono en las biñetas x ejemplo */
+                background-repeat: no-repeat; /* para que el icono de fondo no se replique dentro del boton (aparezca una sola ves) */ 
+        background-size: 20px;
+        background-position: center; /* coloco el ICONO en el centro */  
+        margin-top: 5px;
+        vertical-align:text-top;
+        
+}
