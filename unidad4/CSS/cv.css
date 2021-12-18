@@ -109,7 +109,7 @@ dentro del contenedor tengo el lateral izquierdo, el derecho y principal (medio)
             /* tamaño de la fuente */
             width: 50%;
             height: 40px;
-            /* ancho del boton */
+            /* ancho y alto del boton */
         }
 
         .enviarFormulario:hover {
@@ -153,7 +153,6 @@ dentro del contenedor tengo el lateral izquierdo, el derecho y principal (medio)
         }
 
         footer {
-            /* "La propiedad CSS clear especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos."*/
             background-color: white;
             border-top: 1px solid black;
             width: 1150px;

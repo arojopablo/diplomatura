@@ -22,21 +22,6 @@ hr {
 }
 
 
-/*
-ul {
-    padding-left: 2rem;
-    list-style-type: none;
-  }
-  
-  ul li {
-    padding-left: 2rem;
-    background-image: url(4819950991637858758.svg);
-    background-position: 0 0;
-    background-size: 1.2rem 1.2rem;
-    background-repeat: no-repeat;
-  }
-*/
-
 .datosPersonales {
      float:left;  /* para que la caja "datosPersonales quede al lado de la de foto */ 
     width: 900px;
@@ -104,20 +89,13 @@ ul.redesSociales li a:hover {background-color: #ddd;} /* Al pasar el mouse cambi
         background-color: white;  /*fondo blanco hace "desaparecer" el boton sino tiene borde */ 
         border: 1px solid #008CBA; /* borde color azul*/ 
         color: #008CBA; /* color del texto */ 
-        padding: 15px 32px; 
-        /* text-align: center; */ 
-       /* text-decoration: none;
-        display: inline-block;*/
+        padding: 15px 32px;         
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-        background-image: url("icons/17254674531637858756-128.png");    /* coloco un icono en el boton, la misma propiedad permite poner un icono en las biñetas x ejemplo */
-                background-repeat: no-repeat; /* para que el icono de fondo no se replique dentro del boton (aparezca una sola ves) */ 
         background-size: 5px;
-        background-position: left; /* coloco el ICONO en el centro */  
         margin-top: 5px;
-        vertical-align:text-top;
-        
+        vertical-align:text-top;        
 }
 
 /* clases de formulario de contacto */ 
@@ -201,12 +179,15 @@ ul.redes {
     margin-top: 50px;
 }
 
+/* Se puede usar una clase como esta para cada RED social y los ICONOS agregarlos desde aqui y no desde el codigo HTML 
+*/
 ul.redes li {
     margin-left: 30px;        
     line-height: 1.5; /* INTERLINEADO ENTRE LISTAS */ 
+    /* "Agrando" el espacio para que los iconos queden mas grandes" */ 
     padding-left: 3rem;
     padding-bottom: 3rem;
-   /* background-image: url(4819950991637858758.svg);*/
+   /* background-image: url(4819950991637858758.svg); ----> ICONO AGREGADO DESDE LA HOJA DE ESTILO*/ 
   /*  background-position: 0 0;*/
     background-size: 2rem 2rem;
     background-repeat: no-repeat;
