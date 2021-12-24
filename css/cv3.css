@@ -230,9 +230,9 @@ background: linear-gradient(276deg, rgb(0,128,128) 41%, rgba(246,245,242,1) 53%)
   
   .parrafoFormContacto {
     font-weight: bold;
-   background: #006c6c; /* fallback for old browsers */
-     background: -webkit-linear-gradient(to right, teal 65%, grey 70%, white 50%); /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient( to right, teal 35%, grey 55%, white 40%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: #006c6c; /* en caso que un navegador no tome los gradientes */
+     background: -webkit-linear-gradient(to right, teal 65%, grey 70%, white 50%); /* Versiones Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient( to right, teal 35%, grey 55%, white 40%); /*  VErsiones de navegadores W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
      -webkit-background-clip: text;
      background-clip: text;
      color: transparent;
