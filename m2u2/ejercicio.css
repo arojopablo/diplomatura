@@ -1,12 +1,12 @@
-.contenedor {
 
-    margin: 0 auto;
+.contenedor {
+    height: 300px;
     border: solid;
-    display: flex; /* por defecto mi eje principal es horizontal */ 
-    flex-wrap: wrap;
-    /*las cajas 1 y 3 se "pegan" al extremo del contenedor principal. Se distribuye el espacio a lo largo del eje principal (en este caso horizontal) 
-    quedando el mismo espacio entre la caja 1-2 y 2-3 */ 
-    justify-content:space-between;       
+    display: inline-flex; /* por defecto mi eje principal es horizontal */ 
+    flex-wrap: wrap; 
+    justify-content: space-between; /* centro horizontalmente (eje principal) */
+    flex-direction: row-reverse;
+    align-items: center; /*centro verticalmente (eje secundario) */
     }
     
     .item {
@@ -16,6 +16,7 @@
     height: 100px;
     display: flex;
     /* centramos numero de caja */
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     }
