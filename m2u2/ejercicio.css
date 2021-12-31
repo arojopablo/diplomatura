@@ -1,0 +1,35 @@
+.contenedor {
+height: 300px;
+width: 300px;
+margin: 0 auto;
+border: solid;
+display: flex; /* por defecto mi eje principal es horizontal */ 
+flex-wrap: wrap;
+justify-content: center; /* centro horizontalmente (eje principal) */
+flex-direction: row-reverse;
+align-items: center; /*centro verticalmente (eje secundario) */
+}
+
+.item {
+font-size: 30px;
+color: white;
+width: 100px;
+height: 100px;
+display: flex;
+/* centramos numero de caja */
+justify-content: center;
+align-items: center;
+}
+
+    .colorRojo    {
+        background-color: red;
+    }
+
+    .colorVerde    {
+        background-color: green;
+    }
+
+    .colorAzul    {
+        background-color: blue;        
+    }
+
