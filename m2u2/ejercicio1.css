@@ -1,12 +1,12 @@
 .contenedor {
-    height: 300px;
+    /* height: 300px;
     width: 300px;
-    margin: 0 auto;
+    margin: 0 auto; */
     border: solid;
     display: flex; /* por defecto mi eje principal es horizontal */ 
     flex-direction: column; /* Ahora mi eje principal es vertical */
     flex-wrap: wrap;
-    justify-content: center; /* centro  (eje principal) */
+    /* justify-content: center; */ /*centro  (eje principal) */
     align-items: flex-end; /* muevo items al final */
     }
     

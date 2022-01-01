@@ -2,9 +2,9 @@
 .contenedor {
     height: 300px;
     border: solid;
-    display: inline-flex; /* por defecto mi eje principal es horizontal */ 
+    display: inline-flex; 
     flex-wrap: wrap; 
-    justify-content: space-between; /* centro horizontalmente (eje principal) */
+    /* justify-content: space-between;  */
     flex-direction: row-reverse;
     align-items: center; /*centro verticalmente (eje secundario) */
     }
