@@ -1,7 +1,7 @@
 .contenedor {
-    /* height: 300px;
-    width: 300px;
-    margin: 0 auto; */
+    height: 300px;
+    width: 500px;
+    margin: 0 auto; 
     border: solid;
     display: flex; /* por defecto mi eje principal es horizontal */ 
     flex-direction: column; /* Ahora mi eje principal es vertical */
