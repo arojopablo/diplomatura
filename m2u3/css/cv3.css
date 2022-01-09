@@ -1,0 +1,336 @@
+* {font-family: "Roboto", sans-serif;    
+    font-size: 18px;}
+    
+    .TITULO {
+        font-size: 2em;
+        color: lightslategray;
+    }
+    
+    .SUBTITULO {
+        font-size: 1.2em;
+        color: lightslategray;
+        font-weight: bold;
+    }
+    
+    .tituloFormContacto {
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+    
+     p {
+        color: lightslategray;
+     }
+    
+     .FECHA {
+         color: lightseagreen;
+         font-weight: bold;
+     }
+    
+    
+    .container {
+    width: 1500px;
+    height: 1850px;
+    }
+    
+    .cv {
+     width: 100%;
+     height: 87%;
+    
+    }
+    
+    .columnaIzquierda {
+    width: 31%;
+    height: 100%;
+    /*background-color: thistle;*/
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 14px black; */
+    box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    
+    }
+    
+    .general {
+    width: 65%;
+    height: 100%;
+    float: right;
+    margin-left: 5px;
+    padding: 10px;
+    /*background-color: teal;*/
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    }
+    
+    .datosContacto {
+        float: left;
+        height: 100%; 
+        width: 50%;
+    }
+    
+    .comentariosContacto {
+        float:right;
+         height: 100%; 
+        width: 50%;
+    }
+
+        
+    .footerCv {
+        width: 100%;
+        height: 8%;
+        /* background-color: tomato; */
+        box-sizing: border-box;
+       /* display:block; */
+       /* margin:auto;*/
+        border-radius: 10px;
+        margin-top: 15px;
+    box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    background-color: teal;
+    
+    
+    
+    }
+    
+    .icono {
+        color: teal;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 1px;
+        font-size: 22px;    
+    }
+    
+    .iconoTitulo {
+        font-size:28px;
+    }
+    
+    progress[value] {
+        width: 250px;
+        height: 20px;
+      
+        /* Reinicializar estilos */
+      
+        appearance: none;
+        -webkit-appearance: none;
+      
+      }
+    
+    
+      progress[value]::-webkit-progress-bar {
+        background-color: rgb(241, 238, 238);
+        border-radius: 10px;
+    
+      }
+    
+      progress[value]::-webkit-progress-value {
+        background-color: teal;
+        border-radius: 10px;
+    
+      }
+    
+      /*centramos la imagen */
+      img {
+        display:block;
+        margin:auto;
+    }
+    
+    
+    .subBlanco {
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .iconoRedSocial {
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 1px;
+        font-size: 35px;  
+    }
+    
+    .iconoRedSocial:hover {
+        cursor:pointer;
+    }
+    
+    /* Formulario de contacto */
+    
+    .contacto {
+        width: 100%;
+        height: 22%;
+        margin-top: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+    
+    /* background: rgb(0,128,128);
+    background: linear-gradient(277deg, rgb(0,128,128) 18%, rgba(246,245,242,1) 45%); */
+    
+    /* background: rgb(0,128,128);
+    background: linear-gradient(0deg, rgb(0,128,128) 18%, rgba(246,245,242,1) 45%); */
+    
+    /* background: rgb(34,193,195);
+    background: linear-gradient(277deg, rgba(34,193,195,1) 18%, rgba(246,245,242,1) 45%); */
+    
+    background: rgb(0,128,128);
+    background: linear-gradient(276deg, rgb(0,128,128) 41%, rgba(246,245,242,1) 53%);
+    
+    } 
+    
+    .textGrey {
+    
+        font-size: 20PX;
+        font-weight: bold;
+        color:grey;
+    
+    }
+    .campoTexto {
+        border-radius: 10px;
+        width: 300px;
+        height: 35px;
+        
+        /*text-align: center; */
+        margin-left: 10px;
+        padding-left: 20px;
+    }
+    
+    .area {
+        border-radius: 10px;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px 5px 5px 20px;    
+        /* padding-left:20px;
+        padding-bottom: 10px; */
+    
+    }
+    
+    .boton {
+        background-color: teal; 
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      .botonEnviar {
+        background-color: white; 
+        color: black; 
+        border: 2px solid teal;
+        float: right;
+        margin-right: 50px; 
+        margin-bottom: 5px;
+      }
+      
+      .boton:hover {
+        background-color: teal;
+        color: white;
+        border: solid 2px;
+      }
+      
+      .parrafoFormContacto {
+        font-weight: bold;
+       background: #006c6c; /* en caso que un navegador no tome los gradientes */
+         background: -webkit-linear-gradient(to right, teal 65%, grey 70%, white 50%); /* Versiones Chrome 10-25, Safari 5.1-6 */
+         background: linear-gradient( to right, teal 35%, grey 55%, white 40%); /*  VErsiones de navegadores W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
+         margin-left: 10px;
+         margin-right: 10px;
+       }
+
+
+       @media screen and (min-width: 230px) and (max-width: 800px){
+
+        body {
+            padding:0;
+            margin:0;
+        }
+        .container {
+            width:100%;
+            height: 100%; 
+       
+        }
+
+        .datosContacto {
+            float: none;
+            /* height: 100%;   */
+            width: 100%;
+        }
+        
+        .comentariosContacto {
+            float:none;
+             /* height: 100%;   */
+            width: 100%;
+        }
+
+        .footerCv {
+            width: 100%;
+            /* background-color: tomato; */
+            box-sizing: border-box;
+           /* display:block; */
+           /* margin:auto;*/
+            border-radius: 10px;
+            margin-top: 15px;
+        box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+        -webkit-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+        -moz-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+        background-color: teal;    
+               
+        }
+
+        .botonEnviar {
+            background-color: white; 
+            color: black; 
+            border: 2px solid teal;
+            float: none;
+            margin-right: 50px; 
+            margin-bottom: 5px;
+          }
+
+          
+            
+          .columnaIzquierda {
+            width: 100%;
+            height: 100%;
+            /*background-color: thistle;*/
+            float: none;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 14px black; */
+            box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+            -webkit-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+            -moz-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+            
+            }
+            
+            .general {
+            width: 100%;
+            height: 100%;
+            float: none;
+            margin-left: 5px;
+            padding: 10px;
+            /*background-color: teal;*/
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+            -webkit-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+            -moz-box-shadow: 1px -1px 7px 0px rgba(0,0,0,0.48);
+            }
+
+    }
