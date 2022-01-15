@@ -1,0 +1,29 @@
+header {
+
+    background-image:url("https://via.placeholder.com/800x800"); 
+    /* Full height */
+    height: 800px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+/* -webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(5px); */
+}
+.imagenFondo {
+
+}
+
+.color {
+        height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.menu li {
+display: inline;
+}
