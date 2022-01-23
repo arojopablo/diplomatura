@@ -1,0 +1,357 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: #2e64a1;
+    padding: 1em 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;    
+}
+
+nav {
+    background-color: #6ea9ed;
+    margin-bottom: 2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 16.3%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    color:#333;
+    padding: 3em 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+nav ul li a.activo {
+background-color: #4c76a5;
+}
+
+.holder {
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+h2 {
+    color: #2e64a1;
+    font-weight: 400;
+    margin: 0 0 1em;    
+}
+
+.left {
+     /* float: left;      */
+     display: flex; 
+     flex-direction: column;
+}
+
+.right {
+     /* float: right;  */
+     display: flex;
+     flex-direction: column;
+}
+
+.columnas {
+     display: flex;      
+     justify-content: center;
+     margin-top: 1em;
+     
+}
+/* Inicio Home */ 
+
+.homeimg {
+    margin-bottom: 1.5em;
+    
+}
+
+.bienvenidos, .testimonios {
+    box-sizing: border-box;
+}
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 2em;
+}
+
+.testimonios {
+    width: 25%;
+}
+
+.testimonio {
+    background-color: #ccc;
+    padding: 1em;
+}
+
+.testimonios .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 0.7em;
+    text-align: center;
+    margin: 1em 0;
+    display: block;
+}
+
+/* Fin Home */ 
+/* Inicio Nosotros */
+
+.historia p{
+font-size: 0.8em;
+}
+
+.persona {
+    display: flex;     
+    align-items: center;
+    flex-direction: column;
+    width: 18%; 
+    border:1px solid gray;
+    border-radius: 0.25em;
+    /* float: left; */
+    margin-left: 2.25%; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.persona img {  
+    display: flex;  
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0.5);
+    margin: 0.8em 0.1em;
+    max-width: 70%;    
+    max-height: 20%;
+}
+
+.persona h5, .persona h6 {
+    text-align: center;
+    font-weight: normal;
+    color: #2e64a1;
+    margin:0;
+}
+
+.persona h5 {
+    font-size: 0.9em;    
+}
+
+.persona h6 {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.persona p {
+    font-size: 0.7em;
+    color #444;
+    margin: 0 1em 1em;
+}
+
+.persona:first-child{
+    margin-left: 0;
+}
+
+.personas {
+     overflow: hidden;
+     display: flex; 
+     justify-content: space-between;       
+}
+
+/* .staff {
+    display: flex;    
+} */
+/* Fin Nosotros */ 
+
+/* Inicio Servicios */ 
+.servicio {
+    border: 1px solid gray;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.servicio .info {
+    width: 75%;
+}
+
+.servicio .info h4 {
+    color: #2e64a1;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 0.5em;
+}
+
+.servicio .info {
+    font-size: 0.8em;
+    line-height: 1.2em;    
+}
+
+.servicio img {
+    border-radius: 0.8em;
+}
+
+.servicio:nth-child(even) .img {
+    float: right;
+    margin: 0 0 0 1em;    
+}
+
+.servicio:nth-child(even) .info {
+    float: left;
+}
+
+.servicio:nth-child(odd) .img {
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+.servicio:nth-child(odd) .info {
+    float: right;
+}
+/* Fin Servicios */ 
+
+
+/* Inicio responsive */ 
+@media (max-width: 720px) {
+
+ /* home */ 
+
+ .left {
+    padding: 1em;
+ }
+ nav ul li a {
+     font-size: 1.3em;
+ }
+ 
+h2 {
+    background-color: #6ea9ed;
+    padding: 0.7em;
+    color: white;
+} 
+
+    nav ul li {
+        display:list-item;
+        margin: 0 auto;
+        width: 90%;
+        line-height: 3em;
+    }
+    
+
+    .left {
+       float:none;
+       width: 100%;
+   }
+
+
+    .right {
+        float: none;
+        width: 100%;
+   }
+   
+   .columnas {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1em;      
+        
+   }
+   /* Inicio Home */ 
+   
+   .homeimg {
+       margin-bottom: 1.5em;
+        
+   }
+   .homeImagen {
+       width: 500px;
+   }
+   
+   
+   .bienvenidos {
+       width: 100%;
+       /* padding-right: 2em; */
+   }
+   
+   .testimonios {
+       width: 100%;
+       float: none;
+   }
+
+/* fin home */ 
+
+/* Inicio nosotros */ 
+
+.historia {
+    padding: 1em;
+}
+.personas {
+    overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;          
+}
+
+
+.persona {
+    display: flex;     
+    align-items: center;    
+    flex-direction: column;
+    width: 50%; 
+    border:1px solid gray;
+    border-radius: 0.25em;   
+    box-sizing: border-box;
+    text-align: center;
+    margin:0;
+    margin-top: 1em;    
+}
+
+.persona:first-child{
+    margin:0;     
+}
+
+/* fin nosotros */ 
+
+}
+
+@media (max-width: 500px) {
+    .homeImagen {
+        width: 300px;
+    }
+}
+
+
+
+/* FIN RESPONSIVE */ 
