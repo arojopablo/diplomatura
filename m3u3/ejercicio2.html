@@ -26,6 +26,7 @@
 
         
         const numeros = [1, 25, 58, 2, 8, 9, 8, 1, 17, 80, 12, 2, 3, 1, 14]; // seteo arreglo 
+        document.write("<p> Arreglo estatico de numeros: " + numeros + "</p>");
         const numeroMayor = Math.max(...numeros);                            // determino numero mayor con Match.max
         document.write('<p>El numero mayor es: ' + '<b>' + numeroMayor + '</b>' + '</p>');  
                   
@@ -47,6 +48,7 @@
             }
         }
         console.log(numerosA)
+        document.write("<hr>Arreglo cargado por el usuario " + "<b>" + numerosA + "<b>"); 
         document.write("<p> empleando funcion con iteracion y datos cargados por el usuario el numero mayor es: " + "<b>" + numeroMaximo(numerosA) + "</b>" + "</p>");
                     
 
