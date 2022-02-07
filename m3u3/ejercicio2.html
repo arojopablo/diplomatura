@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+        //         Ejericio 2
+
+        // Crear el código que reciba como parámetro un array de números y devuelva el mayor.
+
+        function numeroMaximo(arraynumeros) {
+        let cantidadNumeros = arraynumeros.length;     // seteo longitud de arreglo con length
+        let mayorn=numeros[0];
+            for (i = 0; i < cantidadNumeros; i++) {
+            if (arraynumeros[i] >= mayorn) {
+                mayorn = arraynumeros[i];                
+            }
+        }
+            return mayorn;
+        }
+
+        
+        const numeros = [1, 25, 58, 2, 8, 9, 8, 1, 17, 80, 12, 2, 3, 1, 14]; // seteo arreglo 
+        const numeroMayor = Math.max(...numeros);                            // determino numero mayor con Match.max
+        document.write('<p>El numero mayor es: ' + '<b>' + numeroMayor + '</b>' + '</p>');  
+                  
+        // otra forma es empleando funcion definida arriba 
+        document.write("<p> empleando funcion con iteracion el numero mayor es: " + "<b>" + numeroMaximo(numeros) + "</b>" + "</p>");
+        
+        // Otra forma: el usuario setea el arreglo, luego se emplea funcion para determinal el mayor                                                                                                    
+        let salir = 'n'
+        let numerosA = []
+
+        while (salir == 'n') {
+            numero = prompt('ingresa un número')
+            if (numero != null) {
+                numerosA.push(parseInt(numero))
+            }
+            let seguir = confirm('desea ingresar mas numeros')
+            if (!seguir) {
+                salir = 'y'
+            }
+        }
+        console.log(numerosA)
+        document.write("<p> empleando funcion con iteracion y datos cargados por el usuario el numero mayor es: " + "<b>" + numeroMaximo(numerosA) + "</b>" + "</p>");
+                    
+
+    </script>
+</body>
+
+</html>
