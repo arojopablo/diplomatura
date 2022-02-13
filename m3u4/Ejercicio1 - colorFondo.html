@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        .caja {
+            margin:1rem;
+            border-radius: 25px;
+            border: 2px solid #73AD21;
+            padding: 20px;
+            width: 150px;
+            height: 100px;            
+        }
+        .caja:hover {
+            cursor: pointer;	 
+	    color:white;
+        }
+	
+	 .cajagreen:hover {
+	   background-color:#73AD21;
+	}
+
+	.cajablue:hover {
+	   background-color:#007bff;
+	}
+
+	.cajared:hover {
+	   background-color:#ff4444;
+	}
+
+        .header {
+            padding: 1.3rem;
+            background-color: #9ED5A0;
+            margin:0 auto;        
+            text-align: center;
+            
+        
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="header">
+        <h1>CAMBIAR COLOR DE FONDO</h1>
+        <p>Ejericio Nº1</p>
+    </div>
+    
+    <div id="cajas">
+        <div class="caja cajagreen" id="colorVerde">
+            <h4>Presione para cambiar el color de fondo</h4>
+            <p style="color:#73AD21"> Color: #73AD21</p>
+        </div>
+
+        <div class="caja cajablue" id="colorAzul">
+            <h4>Presione para cambiar el color de fondo</h4>
+            <p style="color:#007bff"> Color: #007bff</p>
+            
+        </div>
+
+        <div class="caja cajared" id="colorRojo">
+            <h4>Presione para cambiar el color de fondo</h4>
+            <p style="color: #ff4444"> Color: #ff4444</p>
+        </div>
+    </div>
+    
+    <script>
+
+
+        var Rojo = document.getElementById('colorRojo');
+        var Azul = document.getElementById('colorAzul');
+        var Verde = document.getElementById('colorVerde');
+
+
+        Verde.addEventListener('click', (e) => {
+           document.body.style.backgroundColor = '#73AD21';
+	   Verde.style.borderColor="black";
+    	   Rojo.style.borderColor="black";	
+           Azul.style.borderColor="black";	
+           
+        });
+
+        Azul.addEventListener('click', (e) => {
+            document.body.style.backgroundColor = '#007bff';
+            
+        });
+
+        Rojo.addEventListener('click', (e) => {
+          
+           document.body.style.backgroundColor = '#ff4444';	  
+	   
+	
+          
+        });
+
+
+
+    </script>
+</body>
+
+</html>

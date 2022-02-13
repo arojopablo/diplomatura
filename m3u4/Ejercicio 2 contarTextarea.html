@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        .header {
+            padding: 1.3rem;
+            background-color: #9ED5A0;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+        }
+
+        textarea {
+            background-color: #D3D3D3;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .container {
+            /* float: left; */
+            display: flex;
+            margin-top: 1rem;
+            width: 100%;
+            padding: 0 5px;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 85%;
+            text-align: center;
+            background-color: #444;
+            color: white;
+        }
+
+        .area {
+            margin-left: 20px;
+            display: flex;
+            padding: 1rem;
+            border-radius: 10px;
+            border: solid 1px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 20%;
+            line-height: 15px;
+            box-shadow: 0px -1px 12px -1px rgba(0, 0, 0, 0.43);
+            -webkit-box-shadow: 0px -1px 12px -1px rgba(0, 0, 0, 0.43);
+            -moz-box-shadow: 0px -1px 12px -1px rgba(0, 0, 0, 0.43);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>CONTAR CANTIDAD DE LETRAS PRESIONADAS </h1>
+        <h4>Ejericio Nº2</h4>
+    </div>
+    <div class="container">
+        <div class="column">
+            <div class="card">
+                <p><i style="font-size: 1.2rem" class="fa-solid fa-keyboard"></i></p>
+                <h3 id="long">0+</h3>
+                <p>Teclas presionadas</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <p><i style="font-size: 1.2rem" class="fa-solid fa-keyboard"></i></p>
+                <h3 id="textarealong1">0+</h3>
+                <p>Teclas presionadas</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="area">
+
+            <h3> (Con value.length)</h3>
+            <p>Escriba en el texarea:</p>
+            <br>
+            <label><textarea id="otromensaje" name="otromensaje" cols="30" rows="10"></textarea></label>
+            <!-- <span>La cantidad de letras precionadas es:</span> -->
+            <!-- <span id="textarealongitud2">0</span> -->
+
+        </div>
+
+        <div class="area">
+            <p>
+            <h4> OTRA FORMA; (CON UN CONTADOR AL PRECIONAR TECLA) </h4>
+            <p>En este caso si el usuario limpia el formulario (sin recargar pagina) el contador sigue contando la
+                cantidad
+                de letras presionadas... </p>
+            <label><textarea id="mensaje" name="mensaje" cols="30" rows="10"></textarea></label>
+            <!-- <span>La cantidad de letras precionadas es:</span> -->
+            <!-- <span id="textarealongitud">0</span> -->
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Tomo como base el ejercicio visto en clase...
+        // formulario
+        // En este ejemplo si el usuario selecciona y borra el textarea y luego sigue presionando
+        // teclas el contador seguira incrementandose. En el ejemplo siguiente no porque toma
+        // la longitud del value "length"
+
+        var cantidad = 0; // Inicialmente la cantidad es cero
+        var formulario = document.getElementById('mensaje');
+        formulario.addEventListener('keydown', (e) => {
+            // const tecla = e.key;
+            cantidad = cantidad + 1; // sumo la cantidad cada
+            // vez que el usuario preciona una tecla dentro del textarea
+            // dibujo el html con la cantidad                
+            // document.getElementById("textarealongitud").innerHTML = "<b>" + cantidad + "</b>";
+            document.getElementById("textarealong1").innerHTML = "<b>" + cantidad + "</b>";
+
+            // console.log(cantidad);    
+            // console.log(tecla);
+        });
+
+
+        var otracantidad = 0;
+        var otromensaje = document.getElementById('otromensaje');
+        otromensaje.addEventListener('keydown', (e) => {
+            otracantidad = otromensaje.value.length + 1;
+            // dibujo el html con la cantidad                
+            // document.getElementById("textarealongitud2").innerHTML = "<b>   " + otracantidad + "</b>";
+            document.getElementById("long").innerHTML = "<b>" + otracantidad + "</b>";
+
+
+        });
+
+
+    </script>
+</body>
+
+</html>

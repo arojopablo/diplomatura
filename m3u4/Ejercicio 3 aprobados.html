@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        .header {
+            padding: 1.3rem;
+            background-color: #9ED5A0;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            cursor: pointer;
+            position: relative;
+            padding: 12px 8px 12px 40px;
+            background: #eee;
+            font-size: 18px;
+            transition: 0.2s;
+            list-style-type: none;
+        }
+
+        ul li:hover {
+            background: #ddd;
+        }
+
+        .listado {
+            margin: 0 auto;            
+            max-width: 800px;
+            margin-top: 1rem;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>GENERAR ARRAY CON ALUMNOS APROBADOS </h1>
+        <h4>Ejericio Nº3</h4>
+    </div>
+    <h2>TODOS LOS ALUMNOS</h2>
+    <div class="listado">
+        <ul id="listadoAlumnos2">            
+        </ul>
+    </div>
+    <div>
+        <h2> ALUMNOS APROBADOS</h2>
+    </div>
+    <div class="listado">
+        <ul id="listadoAlumnos">
+            
+        </ul>
+    </div>
+    
+
+    <script>
+        // array original de alumnos
+        // Ejercicio 3:
+        // Dado el siguiente array de alumnos utilizar los métodos de array vistos para generar un array con los alumnos aprobados. 
+        // Se considera aprobado todo alumno que tenga una nota mayor o igual a 7.
+
+        var alumnos = [
+
+            {
+
+                nombre: 'Juan Gomez',
+
+                nota: 7
+
+            }, {
+
+                nombre: 'Pedro Rodriguez',
+
+                nota: 4
+
+            }, {
+
+                nombre: 'Roxana García',
+
+                nota: 8
+
+            }, {
+
+                nombre: 'Luciano Lopez',
+
+                nota: 5
+
+            }, {
+
+                nombre: 'Fernanda Gimenez',
+
+                nota: 6
+
+            }, {
+
+                nombre: 'Florencia Martinez',
+
+                nota: 10
+
+            }, {
+
+                nombre: 'Raul Sanchez',
+
+                nota: 7
+
+            }, {
+
+                nombre: 'Sandra Figueroa',
+
+                nota: 8
+
+            }
+
+        ];
+            // TODOS LOS ALUMNOS
+        
+        
+        const listado1 = document.getElementById("listadoAlumnos2");
+        
+        for (i = 0; i < alumnos.length; i++) {
+            var li = document.createElement("li");
+            var value1 = alumnos[i].nombre +  " - Nota: " + alumnos[i].nota;
+            var valueNota1 = alumnos[i].nota;
+            var nombreA1 = document.createTextNode(value1);
+            li.appendChild(nombreA1);            
+            //    document.write(value);
+            console.log(nombreA1);            
+            document.getElementById("listadoAlumnos2").appendChild(li);        
+        }           
+            // ALUMNOS APROBADOS
+        const aprobados = alumnos.filter(calificacion => calificacion.nota >= 7);
+        console.log(aprobados);
+        const listado = document.getElementById("listadoAlumnos");
+        
+        for (i = 0; i < aprobados.length; i++) {
+            var li = document.createElement("li");
+            var value = aprobados[i].nombre +  " - Nota: " + aprobados[i].nota;
+            var valueNota = aprobados[i].nota;
+            var nombreA = document.createTextNode(value);
+            li.appendChild(nombreA);            
+            //    document.write(value);
+            console.log(nombreA);            
+            document.getElementById("listadoAlumnos").appendChild(li);        
+        }       
+       
+
+
+    </script>
+</body>
+
+</html>

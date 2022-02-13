@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="listatareas.css">
+    
+</head>
+<body>
+    <div class="header">
+        <h1>LISTADO DE TAREAS </h1>
+        <h4>Ejericio Complementario</h4>
+    </div>
+    <div class="tareaIngresar">
+        <div class="preHeaderListaTarea bg-dark">
+            <div class="iconoFecha">
+                <i class="fa-regular fa-calendar-days fa-2x icono"> </i>
+            </div>
+            <div class="fechaActual">
+                <p id="demo"></p>
+            </div>            
+        </div>
+        <div class="headerListaTareas">
+            <form>
+                <input id="textTarea" class="inputText" type="text" value="" placeholder="Ingrese tarea...">
+                <button id="agregarTarea" class="btnAgregar" class="agregar">Agregar Tarea</button>
+            </form>
+        </div>
+        <div class="listaTareas">
+            <h2>Lista de Tareas </h2>
+            <ul id="lista">
+            </ul>
+        </div>
+    </div>
+<script src="listatareas.js"></script>
+</body>
+</html>
