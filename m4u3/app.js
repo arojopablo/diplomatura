@@ -7,8 +7,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index'); 
 var usersRouter = require('./routes/users');
 var nosotrosRouter = require('./routes/nosotros'); //nosotros.js
-var novedadesRouter = require('./routes/novedades'); //nosotros.js
-var contactoRouter = require('./routes/contacto'); //nosotros.js
+var novedadesRouter = require('./routes/novedades'); //novedades.js
+var contactoRouter = require('./routes/contacto'); //contatacto.js
+var serviciosRouter = require('./routes/servicios'); //servicios.js
+
 
 const res = require('express/lib/response');
 
@@ -29,6 +31,8 @@ app.use('/users', usersRouter);
 app.use('/nosotros',nosotrosRouter);
 app.use('/novedades', novedadesRouter);
 app.use('/contacto', contactoRouter);
+app.use('/servicios', serviciosRouter);
+
 
 
 app.get('/prueba', function(req,res) {
