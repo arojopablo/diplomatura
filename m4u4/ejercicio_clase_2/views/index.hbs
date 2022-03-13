@@ -1,0 +1,27 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<p>Cantidad de visitas a esta pagina:<strong>{{vistas}}</strong> </p>
+
+{{#if conocido }}
+<p>Hola {{nombre}} 
+    <ul>
+        <li><a href="/salir">Salir (Cerrar Sesion)</a></li>
+        <li><a href="/volver">Volver a cargar '/' (ingresar otro nombre sin cerrar sesion)</a> </li>
+    </ul>
+     
+Tu edad es {{edad}}
+    {{#if mayoredad}}
+        <p>Eres mayor de edad</p>
+        {{else}}
+        <p>Eres menor de edad</p>
+    {{/if}}    
+{{/if}}
+
+{{#unless conocido}}
+<p>no te conozco</p>
+<form action="/ingresar" method="post">
+  <input type="text" name="nombre" placeholder="Ingrese su nombre">
+  <input type="text" name="edad" placeholder="Ingrese su edad"><button>Ingesar</button> 
+
+</form>
+{{/unless}}
