@@ -31,6 +31,7 @@ app.use(session({
 }
 ))
 
+// cuento las visitas a la pagina de acuerdo al ejemplo de PDF visto en clase
 app.use(function(req,res,next){
   if(!req.session.vistas) {
     req.session.vistas = {};
@@ -48,8 +49,8 @@ app.use(function(req,res,next){
 
 app.get('/', function(req,res){
   var conocido = Boolean(req.session.nombre);  
-  var mayoredad = Boolean(req.session.edad);
-  if((req.session.edad) >= 21) {
+  var mayoredad = Boolean(req.session.edad); // sigo con la misma logica del ejercicio visto en clase
+  if((req.session.edad) >= 21) { // chequeo la edad ingresada para verificar si es maoyor o menor
     mayoredad = true;
   } else {
     mayoredad = false;
@@ -57,29 +58,29 @@ app.get('/', function(req,res){
   res.render('index',{
     title: 'Sesiones en express',
     conocido: conocido,
-    mayoredad: mayoredad,
-    nombre: req.session.nombre,
-    edad: req.session.edad,
-    vistas: req.session.vistas[req.originalUrl]
+    mayoredad: mayoredad,   // agrego al ejercicio visto en clase
+    nombre: req.session.nombre, 
+    edad: req.session.edad,   // tomo la edad 
+    vistas: req.session.vistas[req.originalUrl]  // tomo la cantidad de vistas de acuerdo al ejemplo del PDF visto en clase
   });
 });
 
 app.post('/ingresar', function(req, res) {
   if(req.body.nombre) {
     req.session.nombre = req.body.nombre;
-    req.session.edad = req.body.edad;
+    req.session.edad = req.body.edad;         
   }
   res.redirect('/');
 });
 
 app.get('/volver', function(req,res){
-  req.session.nombre = false;
-    res.redirect('/');
+  req.session.nombre = false;   
+    res.redirect('/');      //hago redirect sin destruir la sesion entonces sigo contando la cantidad de visitas hasta que el usuario presione en salir
 });
 
 
 app.get('/salir', function(req,res){
-  req.session.destroy();
+  req.session.destroy();   // destruyo sesion y empiezo de nuevo
   res.redirect('/');
 });
 
