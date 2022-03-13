@@ -1,0 +1,61 @@
+
+.bg-gris {
+  background-color: #F5F5F5;
+} 
+
+header {
+  background-color: #F5F5F5;
+
+}
+.izquierda {
+      float:left;
+    }
+.logo {
+      /* font-family: 'Open Sans', sans-serif; */
+      font-family: 'Dancing Script', cursive;   
+      color: #00862D;
+      font-size: 28px;
+    }
+    
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+footer {
+  background-color:  #dfdede;
+  margin-top: 2rem;
+ }
+ 
+ ul {
+   line-height: 2rem;
+ }
+ 
+ ul li {
+   list-style-type: none;
+ }
+ 
+ ul li a {
+   text-decoration: none;
+   font-size: 1.1rem;
+   color:#3E3E3E;
+ }
+ 
+ .iconoRedes {
+   font-size: 2rem;
+   padding: 0.5rem;
+   border-radius: 10px;
+ }
+ 
+ .iconoRedes:hover {
+   background-color:  #A5A5A5;
+   cursor: pointer;
+  
+ }
+
+ a.disabled {
+  color: gray;
+  pointer-events: none;
+}
