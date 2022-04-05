@@ -46,7 +46,7 @@ pool.query("SELECT * FROM empleados").then(function(resultados){
 //   console.log(resultados);
 // })
 
- // UPDATE
+//  UPDATE
 //  var id_emp = 6;
 //  var obj = {
 //           nombre  : 'Pablo',
@@ -60,11 +60,11 @@ pool.query("SELECT * FROM empleados").then(function(resultados){
 
 // DELETE
 
-var id = 30
-pool.query("delete from empleados where id_emp=?", [id]).then
-(function(resultados){
-  console.log(resultados);
-})
+// var id = 29
+// pool.query("delete from empleados where id_emp=?", [id]).then
+// (function(resultados){
+//   console.log(resultados);
+// })
 
 
 
