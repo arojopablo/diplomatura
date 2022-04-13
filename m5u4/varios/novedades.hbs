@@ -1,0 +1,15 @@
+<h1>Proximamente novedades</h1>
+<div class="container" style="margin-top:50px;">
+    <div class="row">
+        <p class="text-end"> Hola {{usuario}}<a href="/admin/login/logout" class="btn btn-danger"> Cerrar Sesion
+            <i class = "fa fa-sign-out-alt"></i>
+        </a></p>    
+        {{#if rol}}
+        <p>Esto solo lo ve el root tengo permiso de root</p>
+
+         {{else}}
+        <p>tengo permiso de lectura</p>
+        {{/if}}
+
+    </div>
+</div>
