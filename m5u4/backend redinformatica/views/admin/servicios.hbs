@@ -1,0 +1,40 @@
+
+    <h1>servicios</h1>
+<div class="container">
+    <div class="row">
+        {{!-- <p class="text-end"> Hola {{usuario}} <a class="btn btn-danger" href="/admin/login/logout">Cerrar Sesion
+                <i class="fas fa-sign-out-alt"></i> </a></p> --}}
+    </div>
+    <div class="text-end">
+        {{!-- <a href="/admin/productos/insertProducto" type="button" class="btn btn-primary align-self-center">+
+            Agregar Nuevo Producto</a> --}}
+        <a href="/admin/servicios/agregar" type="button" class="btn btn-primary align-self-center">+ Agregar Servicio
+            </a>
+    </div>
+    <table class="table table-bordered">
+        <thead class="bg-dark text-white">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Servicio</th>               
+                <th scope="col">Acciones (Editar/Borrar)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each servicios}}
+            <tr>
+                <th scope="row">{{id}}</th>
+                <td>{{titulo}}</td>
+                <td>{{servicio}}</td>
+                <td>
+                    <p class="text-end"><a class="btn btn-primary mx-2" href="/admin/servicios/edit/{{this.id_producto}}">
+                            <i class="fa-solid fa-pencil"></i></a><a class="btn btn-danger"
+                            href="/admin/servicios/{{this.id_producto}}">
+                            <i class="fa-solid fa-trash-can"></i></a></p>
+                </td>
+            </tr>
+        </tbody>
+        {{/each}}
+    </table>
+</div>
+</h1>
