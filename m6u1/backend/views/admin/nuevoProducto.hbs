@@ -1,0 +1,63 @@
+ {{!-- <a href="/admin/productos/insertProducto" type="button" class="btn btn-primary align-self-center">+ Agregar Nuevo Producto</a>  --}}
+ {{!-- <a href="/admin/productos/" type="button" class="btn btn-primary align-self-center">Volver</a> --}}
+<h2>Agregar producto</h2>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/admin/productos/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+</nav>
+
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Correcto!</strong> {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{!-- <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Correcto!</strong> {{alert}}
+  <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div> --}}
+{{/if}}
+<form class="row g-3 needs-validation" method="post" action="/admin/nuevoProducto" novalidate>
+<div class="col-6">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="inputUser" placeholder="Nombre Producto" name="nombre">  
+
+        {{!-- <input type="text" class="form-control" id="floatingInput" placeholder="Nombre producto" name="nombre"> --}}
+        <label for="floatingInput">Producto (nombre)</label>
+    </div>
+</div>
+<div class="col-6">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Descripcion producto"
+            name="descripcion">
+        <label for="floatingInput"> Descripcion </label>
+    </div>
+</div>
+<div class="col-6">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Marca producto" name="marca">
+        <label for="floatingInput"> Marca </label>
+    </div>
+</div>
+<div class="col-6">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Precio producto" name="precio">
+        <label for="floatingInput"> Precio </label>
+    </div>
+</div>
+<div class="col-12">
+    <div class="form-floating mb-3">
+        <textarea class="form-control" id="floatingInput" placeholder="Observaciones" name="observaciones"
+            style="height: 200px"></textarea>
+        <label for="floatingInput"> Observaciones </label>
+    </div>
+</div>
+<div class="col-12 d-grid">
+             <button type="submit" class="btn btn-primary">+ Agregar Nuevo Producto</button>
+
+ {{!-- <a href="/admin/productos/nuevoProducto" type="button" class="btn btn-primary align-self-center">+ Agregar Nuevo Producto</a>  --}}
+</div>
+</form>  

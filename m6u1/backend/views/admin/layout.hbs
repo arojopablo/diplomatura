@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/redinformatica.css' />
+
+</head>
+
+<body>
+  <header>   
+    {{#if usuario}}
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-1">
+      <a class="navbar-brand" href="/admin/productos">Red Infomrmatica Sistema de Admninistracion</a>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarText">
+        <ul class="navbar-nav mr-auto align-items-center">
+          <li class="nav-item active mx-4">
+            <a class="nav-link" href="/admin/productos">Productos <span class="sr-only">Productos</span></a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="/admin/servicios">Servicios</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="/admin/novedades">Novedades</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="/admin/clientes">Clientes</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="/admin/ventas">Ventas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Ofertas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/admin/ofertas">Ofertas </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">PROMOS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Centro de copiado
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Noticia</a></li>
+              <li><a class="dropdown-item" href="#">Servicio de impresion</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">OFERTAS</a></li>
+              <li><a class="dropdown-item" href="#">Precios</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="/admin/usuarios">Usuarios</a>
+          </li>
+        </ul>
+         <span class="navbar-text text-white">
+           <strong>Usuario:</strong> {{usuario}} <a class="btn btn-danger ms-2"
+              href="/admin/login/logout">Salir
+              <i class="fas fa-sign-out-alt"></i> </a>
+      </span>
+        
+      </div>
+    </nav>
+</body>
+
+{{!-- barra de navegacion:
+<a href="/admin/novedades"> Novedades </a>
+<a href="/admin/servicios"> Servicios </a>
+<a href="/admin/productos"> Productos </a> --}}
+{{/if}}
+</header>
+{{{body}}}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<footer>
+  <p class="text-center p-2">Todos los derechos reservados @año</p>
+</footer>
+
+</html>

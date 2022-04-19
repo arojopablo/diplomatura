@@ -1,0 +1,57 @@
+<div class="container">
+     <p class="text-center"><h3>Productos</h3></p>
+    <div class="row">
+        {{!-- <p class="text-end"> Hola {{usuario}} <a class="btn btn-danger" href="/admin/login/logout">Cerrar Sesion
+                <i class="fas fa-sign-out-alt"></i> </a></p> --}}
+    </div>
+    <div class="my-3 text-center">
+        <form action="/admin/productos/buscar" method="post">
+        <div class="mb-3 row">
+            <div class="d-flex col-sm-10">
+                <input type="text" class="form-control mx-1" placeholder="Buscar..." name="buscar"> 
+                 <button type="submit" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>        
+        </form>        
+    </div>
+    <div class="text-end">
+        {{!-- <a href="/admin/productos/insertProducto" type="button" class="btn btn-primary align-self-center">+
+            Agregar Nuevo Producto</a> --}}
+        <a href="/admin/productos/nuevoProducto" type="button" class="btn btn-primary align-self-center">+ Agregar Nuevo
+            Producto</a>
+    </div>    
+    <table class="table table-bordered">
+        <thead class="bg-dark text-white">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Imagen</th>
+                <th scope="col">Acciones (editar/borrar)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+            <tr>
+                <td>{{this.id_producto}}</td>
+                <th scope="row">{{this.nombre}}</th>
+                <td>{{this.precio}}</td>
+                <td>{{this.descripcion}}</td>
+                <td>{{this.marca}}</td>
+                <td>{{this.imagen}}</td>
+                <td>
+                    <p class="text-end"><a class="btn btn-primary mx-2" href="/admin/productos/edit/{{this.id_producto}}">
+                            <i class="fa-solid fa-pencil"></i></a><a class="btn btn-danger"
+                            href="/admin/productos/{{this.id_producto}}">
+                            <i class="fa-solid fa-trash-can"></i></a></p>
+                </td>
+            </tr>
+        </tbody>
+        {{/each}}
+    </table>
+
+
+
+</div>
