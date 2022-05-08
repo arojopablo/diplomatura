@@ -1,0 +1,101 @@
+.bg-gris {
+  background-color: #F5F5F5;
+} 
+/* 
+.menu ul {
+  list-style-type: none;    
+}
+
+.menu ul li {
+  display: inline;
+  padding-left: 2.5rem;
+}
+
+.derecha {    
+  float:right;
+}
+.derecha li {
+  list-style-type: none;
+}
+
+.izquierda {
+  float:left;
+}
+.logo {
+ 
+  font-family: 'Dancing Script', cursive;   
+  color: #00862D;
+  font-size: 28px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color:#3E3E3E;
+}
+.menu ul li a:hover {
+  color:#3A8337;
+} */
+
+h1 {
+  color: #3A8337;
+  font-weight: bold;
+}
+
+h2 {
+  color: #3A8337;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  color: #A5A5A5;
+} 
+
+hr {
+  margin-top: -10px;
+  width: 90%;    
+  border: solid 1px;
+}
+
+.card {
+  cursor: pointer;    
+}
+  .card:hover {
+      -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+  }
+
+.observacion {
+  font-weight: 450;
+  font-size: 18px;
+  color: #3A8337;
+}
+
+.beneficios ul li {
+  font-size: 24px;
+  line-height: 3rem;
+
+}
+  .beneficios ul li i {
+      font-size: 1.5rem;
+      margin: 1rem;
+      color: #3A8337;
+  }
+
+.promo {
+  border: solid 1px;
+  margin:4rem;   
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.promo-img {
+  
+  margin:4rem;   
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
