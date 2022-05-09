@@ -1,0 +1,36 @@
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}   
+    .contenedor img {
+        opacity: 0.65;
+    }
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;    
+}
+    .centrado p {
+        color: #3E3E3E;
+        font-family: 'Dancing Script', cursive;   
+        font-weight: 500;
+    }
+
+
+ @media (max-width: 720px) {
+
+.centrado {
+font-size: 1rem;
+
+} 
+       
+}

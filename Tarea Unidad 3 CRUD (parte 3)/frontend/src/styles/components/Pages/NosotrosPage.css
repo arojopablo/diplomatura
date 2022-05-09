@@ -1,0 +1,31 @@
+.bg-gris3 {
+    background-color: #F5F6FA;
+  }
+  
+  .nosotrosTexto {
+    font-style: italic;
+  
+  }
+  
+  .bg-verde {
+    background-color: #3A8337;
+  }
+  
+  .tituloNosotros {
+    font-size: 24px;
+    color:white;
+    font-weight: 500;
+  }
+
+  .carousel .item {
+    color: #999;
+    font-size: 14px !important;
+    text-align: center;
+    overflow: hidden;
+    min-height: 290px;
+  }
+
+  .opinion {
+    font-style: italic;
+    font-size: 20px;
+  }

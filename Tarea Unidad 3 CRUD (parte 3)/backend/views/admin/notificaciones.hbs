@@ -1,0 +1,15 @@
+<div class="container">
+    <p class="text-center">
+    <h3>Notificaciones</h3>
+    </p>
+    <div class="row">
+    </div>
+
+    {{#each notificacion}}
+
+    <div class="alert alert-secondary col-sm-8 text-center" role="alert">
+        <p class="notificacion"><i class="fa-solid fa-check"></i> {{this.notificacion}}</p>
+    </div>
+    {{/each}}
+
+</div>
