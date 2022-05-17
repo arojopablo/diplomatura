@@ -1,0 +1,79 @@
+nav ul li a.activo {
+    color:#3A8337;
+    font-weight: bold;
+      }
+
+ .menu ul {
+        list-style-type: none;    
+      }
+      
+ .menu ul li {
+        display: inline;
+        padding-left: 2.5rem;
+      }
+ .derecha {    
+        float:right;
+      }
+ .derecha li {
+        list-style-type: none;
+      }
+      
+ .izquierda {
+        float:left;
+      }
+ .logo {
+        /* font-family: 'Open Sans', sans-serif; */
+        font-family: 'Dancing Script', cursive;   
+        color: #00862D;
+        font-size: 28px;
+      }
+      
+ .menu ul li a {
+        text-decoration: none;
+        color:#3E3E3E;
+      }
+      .menu ul li a:hover {
+        color:#3A8337;
+      }
+
+.btnMenu {
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        padding: 5px;
+        color: #000;
+        font-size: 18px;
+    }
+        
+
+ @media (max-width: 720px) {
+
+ 
+.derecha {
+  float: none;
+}
+
+.izquierda {
+  float:none;
+}
+
+
+ .memu ul li a {
+          font-size: 1.3em;
+       }
+      
+ .menu ul li {
+        display:list-item;
+        margin: 0 auto;
+        width: 90%;
+        line-height: 3em;
+      }
+
+.btnMenu  {
+        display: block;
+    }
+
+} /* Cierro media query */
+
+      
